@@ -1,6 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
-
 function getComputerChoice() {
   return Math.floor(Math.random() * 3);
 }
@@ -9,6 +6,9 @@ function getHumanChoice() {
   return prompt("Please choose rock, paper or scissors:");
 }
 
+function playGame() {
+let humanScore = 0;
+let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
   let humanPlay = humanChoice.toLowerCase();
   let computerPlay = computerChoice;
@@ -34,6 +34,9 @@ function playRound(humanChoice, computerChoice) {
       return console.log(`You lose! ${computerPlay} beats ${humanPlay}.`);
   }
 }
+}
+
+
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
