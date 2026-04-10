@@ -48,3 +48,5 @@ function playGame() {
     return console.log(`You lost! Your score: ${humanScore}. Computer score: ${computerScore}.`);
   }
 }
+
+playGame();
