@@ -6,5 +6,5 @@ function getHumanChoice() {
   return prompt("Please choose rock, paper or scissors:");
 }
 
-const humanPlay = getHumanChoice();
-const computerPlay = getComputerChoice();
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
