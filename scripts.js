@@ -24,7 +24,9 @@ function playRound(humanChoice, computerChoice) {
     return console.log("That's a tie!");
   } else if (humanPlay === "rock" && computerPlay === "paper") {
     
-    return console.log("You lose! Paper beats rock.");
+    
+    
+    console.log("You lose! Paper beats rock.");
   }
 }
 
