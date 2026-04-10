@@ -23,8 +23,8 @@ function playRound(humanChoice, computerChoice) {
   if (humanPlay === computerPlay) {
     return console.log("That's a tie!");
   } else if (humanPlay === "rock" && computerPlay === "paper") {
-
-    return console.log("You win! Rock beats paper.");
+    
+    return console.log("You lose! Paper beats rock.");
   }
 }
 
