@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   return Math.floor(Math.random() * 3);
 }
@@ -15,6 +18,13 @@ function playRound(humanChoice, computerChoice) {
     computerPlay = "paper";
   } else {
     computerPlay = "scissors";
+  }
+
+  if (humanPlay === computerPlay) {
+    return console.log("That's a tie!");
+  } else if (humanPlay === "rock" && computerPlay === "paper") {
+
+    return console.log("You win! Rock beats paper.");
   }
 }
 
