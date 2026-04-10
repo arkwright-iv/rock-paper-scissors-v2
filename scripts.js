@@ -39,7 +39,7 @@ function playGame() {
   }
 
   while (rounds < 5) {
-    playRound(getHumanChoice(), getHumanChoice());
+    playRound(getHumanChoice(), getComputerChoice());
   }
 
   if (humanScore > computerScore) {
