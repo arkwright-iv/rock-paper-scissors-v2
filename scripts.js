@@ -22,11 +22,16 @@ function playRound(humanChoice, computerChoice) {
 
   if (humanPlay === computerPlay) {
     return console.log("That's a tie!");
-  } else if (humanPlay === "rock" && computerPlay === "paper") {
-    
-    
-    
-    console.log("You lose! Paper beats rock.");
+  } else if (humanPlay === "rock" && computerPlay === "scissors" ||
+    humanPlay === "paper" && computerPlay === "rock" ||
+    humanPlay === "scissors" && computerPlay === "paper") {
+      humanScore++;
+      return console.log(`You win! ${humanPlay} beats ${computerPlay}.`);
+  } else if (humanPlay === "rock" && computerPlay === "paper" ||
+    humanPlay === "paper" && computerPlay === "scissors" ||
+    humanPlay === "scissors" && computerPlay === "rock") {
+      computerScore++;
+      return console.log(`You lose! ${computerPlay} beats ${humanPlay}.`);
   }
 }
 
