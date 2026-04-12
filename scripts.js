@@ -10,21 +10,27 @@ const scissorsBtn = document.querySelector(".scissors-btn");
 
 rockBtn.addEventListener("click", function () {
   if (gameFinished) {
-    winnerText.textContent = "";
+    playerScore.textContent = humanScore;
+    cpuScore.textContent = computerScore;
+    winnerText.textContent = "&nbsp;";
     gameFinished = false;
   }
   return playRound("rock", getComputerChoice());
 });
 paperBtn.addEventListener("click", function () {
   if (gameFinished) {
-    winnerText.textContent = "";
+    playerScore.textContent = humanScore;
+    cpuScore.textContent = computerScore;
+    winnerText.innerHTML = "&nbsp;";
     gameFinished = false;
   }
   return playRound("paper", getComputerChoice());
 });
 scissorsBtn.addEventListener("click", function () {
   if (gameFinished) {
-    winnerText.textContent = "";
+    playerScore.textContent = humanScore;
+    cpuScore.textContent = computerScore;
+    winnerText.innerHTML = "&nbsp;";
     gameFinished = false;
   }
   return playRound("scissors", getComputerChoice());
@@ -40,19 +46,23 @@ let round = 0;
 let gameFinished = false;
 
 function playRound(humanChoice, computerChoice) {
-  if (round >= 5) {
+  if (round === 5) {
     if (humanScore > computerScore) {
       winnerText.textContent = "Player wins!";
       round = 0;
       humanScore = 0;
       computerScore = 0;
-      return 1;
+      let lastResult = roundResult.textContent;
+      roundResult.textContent = `${lastResult} Game over! Click on any image to start again.`;
+      return gameFinished = true;
     } else {
       winnerText.textContent = "Computer wins!";
       round = 0;
       humanScore = 0;
       computerScore = 0;
-      return 1;
+      let lastResult = roundResult.textContent;
+      roundResult.textContent = `${lastResult} Game over! Click on any image to start again.`;
+      return gameFinished = true;
     }
   }
 
