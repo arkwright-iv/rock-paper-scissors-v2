@@ -3,7 +3,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  return prompt("Please choose rock, paper or scissors:");
+  return "Please choose rock, paper or scissors:"
 }
 
 function playGame() {
@@ -51,5 +51,3 @@ function playGame() {
     return console.log(`You lost! Your score: ${humanScore}. Computer score: ${computerScore}.`);
   }
 }
-
-playGame();
