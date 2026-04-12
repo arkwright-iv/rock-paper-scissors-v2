@@ -1,8 +1,9 @@
 const scoreboard = document.getElementById("scoreboard");
 const resultParentEl = document.getElementById("results");
-const resultsEl = document.createElement("p");
-resultParentEl.appendChild(resultsEl);
-
+const roundResult = document.querySelector(".round-result");
+const playerScore = document.querySelector(".player-score");
+const cpuScore = document.querySelector(".cpu-score");
+const totalScore = document.querySelector(".total-score");
 const rockBtn = document.querySelector(".rock-btn");
 const paperBtn = document.querySelector(".paper-btn");
 const scissorsBtn = document.querySelector(".scissors-btn");
@@ -40,17 +41,17 @@ function playRound(humanChoice, computerChoice) {
     computerPlay = "scissors";
   }
   if (humanPlay === computerPlay) {
-    return resultsEl.textContent = `That's a tie!`;
+    return roundResult.textContent = `That's a tie!`;
   } else if (humanPlay === "rock" && computerPlay === "scissors" ||
     humanPlay === "paper" && computerPlay === "rock" ||
     humanPlay === "scissors" && computerPlay === "paper") {
     humanScore++;
-    return resultsEl.textContent = `You win! ${humanPlay} beats ${computerPlay}.`;
+    return roundResult.textContent = `You win! ${humanPlay} beats ${computerPlay}.`;
   } else if (humanPlay === "rock" && computerPlay === "paper" ||
     humanPlay === "paper" && computerPlay === "scissors" ||
     humanPlay === "scissors" && computerPlay === "rock") {
     computerScore++;
-    return resultsEl.textContent = `You lose! ${computerPlay} beats ${humanPlay}.`;
+    return roundResult.textContent = `You lose! ${computerPlay} beats ${humanPlay}.`;
   }
 }
 

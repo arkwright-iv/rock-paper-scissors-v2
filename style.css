@@ -57,12 +57,12 @@ img:hover {
   margin-top: 60px;
 }
 
-#results {
+#results-wrapper {
   display: flex;
   justify-content: center;
 }
 
-#results > p {
+#results-wrapper > p {
   text-align: center;
   font-size: 32px;
   margin-top: 60px;
