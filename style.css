@@ -7,12 +7,15 @@
 body {
   min-height: 100vh;
   overflow: hidden;
+  background-color: rgb(52, 52, 52);
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 body > h1 {
   font-size: 48px;
   margin: 80px auto;
   text-align: center;
+  color: antiquewhite;
 }
 
 img {
