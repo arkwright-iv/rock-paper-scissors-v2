@@ -22,10 +22,6 @@ function getComputerChoice() {
   return Math.floor(Math.random() * 3);
 }
 
-function getHumanChoice() {
-  return "Please choose rock, paper or scissors:";
-}
-
 let humanScore = 0;
 let computerScore = 0;
 let rounds = 0;
