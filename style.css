@@ -9,13 +9,18 @@ body {
   overflow: hidden;
   background-color: rgb(52, 52, 52);
   font-family: "Trebuchet MS", sans-serif;
+  color: antiquewhite;
 }
 
 body > h1 {
   font-size: 48px;
   margin: 80px auto;
   text-align: center;
-  color: antiquewhite;
+  color: bisque;
+}
+
+table, th, td {
+  border: 1px solid rgba(250, 235, 215, 0.3);
 }
 
 img {
@@ -57,5 +62,4 @@ img:hover {
   text-align: center;
   font-size: 32px;
   margin-top: 60px;
-  color: bisque;
 }
