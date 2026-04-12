@@ -12,7 +12,7 @@ rockBtn.addEventListener("click", function () {
   if (gameFinished) {
     playerScore.textContent = humanScore;
     cpuScore.textContent = computerScore;
-    winnerText.textContent = "&nbsp;";
+    winnerText.innerHTML = "&nbsp;";
     gameFinished = false;
   }
   return playRound("rock", getComputerChoice());
