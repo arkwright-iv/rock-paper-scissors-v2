@@ -19,6 +19,10 @@ body > h1 {
   color: bisque;
 }
 
+table {
+  margin-left: 200px;
+}
+
 table, th, td {
   border: 1px solid rgba(250, 235, 215, 0.3);
 }
