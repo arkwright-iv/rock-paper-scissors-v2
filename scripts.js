@@ -3,7 +3,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  return "Please choose rock, paper or scissors:"
+  return "Please choose rock, paper or scissors:";
 }
 
 function playGame() {
@@ -39,10 +39,6 @@ function playGame() {
         Your score: ${humanScore}. Computer score: ${computerScore}.`);
       return rounds++;
     }
-  }
-
-  while (rounds < 5) {
-    playRound(getHumanChoice(), getComputerChoice());
   }
 
   if (humanScore > computerScore) {
