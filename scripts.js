@@ -1,3 +1,23 @@
+const rockBtn = document.querySelector(".rock-btn");
+const paperBtn = document.querySelector(".paper-btn");
+const scissorsBtn = document.querySelector(".scissors-btn");
+
+rockBtn.addEventListener("click", function(e) {
+  
+});
+paperBtn.addEventListener("click", function(e) {
+
+});
+scissorsBtn.addEventListener("click", function(e) {
+
+});
+
+
+
+
+
+
+
 function getComputerChoice() {
   return Math.floor(Math.random() * 3);
 }
